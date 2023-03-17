@@ -1,0 +1,108 @@
+premier resultats 99.459
+paramètre de base : 
+learnRate = 0.01          # Define a learning rate.
+maxEpochs = 20            # Maximum training epochs
+t2vRatio = 1.2            #  Maximum allowed ratio of validation to training loss
+t2vEpochs = 3             # Number of consecutive epochs before halting if validation loss exceeds above limit
+batchSize = 300  
+
+
+Première modification:
+t2vRatio = de 1.2 je passe à 1.5
+-> accuracy 99.651
+
+teste avc
+t2vRatio = 2
+-> 99.668
+
+teste 3
+t2vRatio = 2
+learning rate à 0.05 et batchSize à 250
+maxEpochs 20
+-> 99.79
+
+teste 4
+learning rate à 0.1 et batchSize à 300
+-> 16.63%
+
+teste 5
+t2vRatio = 2
+learning rate à 0.05 et batchsize à 300
+maxEpochs 15
+Correct predictions:  5723 of 5740
+-> 99,70
+
+teste 6
+t2vRatio = 2
+learning rate à 0.05 et batchsize à 250
+maxEpochs 15
+Correct predictions: 5724 of 5740
+-> 99,72%
+
+-----------------------------------------------------------------
+Change the number of convolutions : 
+the size of the convolutions : 
+and the number of fully connected layers : 
+initial :
+ numConvs1 = 5      10
+ convSize1 = 7      14
+ numConvs2 = 10     20
+ convSize2 = 7      14
+---
+fcSize1 = 400       400
+fcSize2 = 80        80
+---
+learnRate = 0.05          # Define a learning rate.
+maxEpochs = 20            # Maximum training epochs
+t2vRatio = 2            #  Maximum allowed ratio of validation to training loss
+t2vEpochs = 3             # Number of consecutive epochs before halting if validation loss exceeds above limit
+batchSize = 250 
+------------------------------------------------------------------
+
+
+https://jrzech.medium.com/what-are-radiological-deep-learning-models-actually-learning-f97a546c5b98
+
+
+https://poloclub.github.io/cnn-explainer/
+
+
+---------------------------------------------------------------------
+
+Rapport :
+
+learnRate = 0.05          # Define a learning rate.
+maxEpochs = 20            # Maximum training epochs
+t2vRatio = 2            #  Maximum allowed ratio of validation to training loss
+t2vEpochs = 3             # Number of consecutive epochs before halting if validation loss exceeds above limit
+batchSize = 250           # Batch size. Going too large will cause an out-of-memory error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> 99,70
